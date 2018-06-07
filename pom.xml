@@ -130,13 +130,10 @@
                     <artifactItem>
                       <groupId>org.eclipse.jetty</groupId>
                       <artifactId>jetty-runner</artifactId>
-                      <version>9.4.9.v20180320</version>
+                      <version>9.2.11.v20150529</version>
                       <destFileName>jetty-runner.jar</destFileName>
                     </artifactItem>
                   </artifactItems>
-                  <httpConnector>
-                        <port>8082</port>
-                  </httpConnector>
                 </configuration>
               </execution>
              </executions>
