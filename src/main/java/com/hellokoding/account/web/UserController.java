@@ -51,7 +51,7 @@ public class UserController {
             model.addAttribute("error", "Nom d'utilisateur ou mot de passe incorrect.");
 
         if (logout != null)
-            model.addAttribute("message", "Vous vous Ãªtes connectÃ© avec succÃ¨s.");
+            model.addAttribute("message", "Vous vous êtes connecté avec succès.");
 
         return "login";
     }
