@@ -35,14 +35,14 @@
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
-            <input name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
+            <input id="id_utilisateur" name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
                    autofocus="true"/>
-            <input name="password" type="password" class="form-control" placeholder="Mot de passe"/>
+            <input id="mdp_utilisateur" name="password" type="password" class="form-control" placeholder="Mot de passe"/>
             <span>${error}</span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-            <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
-            <h4 class="text-center"><a href="${contextPath}/registration">Créer un compte</a></h4>
+            <button id="connexion" class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+            <h4 class="text-center"><a id="creation_compte" href="${contextPath}/registration">CrÃ©er un compte</a></h4>
         </div>
 
     </form>
