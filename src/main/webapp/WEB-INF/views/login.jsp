@@ -42,7 +42,11 @@
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
             <button id="connexion" class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+<<<<<<< HEAD
             <h4 class="text-center"><a id="creation_compte" href="${contextPath}/registration">Pas encore de compte?</a></h4>
+=======
+            <h4 class="text-center"><a id="creation_compte" href="${contextPath}/registration">Pas encore de compte ?</a></h4>
+>>>>>>> 0fa83e2cf642090ba93a5c40065fc24328d1a1c9
         </div>
 
     </form>
