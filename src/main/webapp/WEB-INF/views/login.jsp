@@ -35,7 +35,7 @@
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
-            <input id="id_utilisateur" name="username" type="text" class="form-control" placeholder="Login"
+            <input id="id_utilisateur" name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
                    autofocus="true"/>
             <input id="mdp_utilisateur" name="password" type="password" class="form-control" placeholder="Mot de passe"/>
             <span>${error}</span>
