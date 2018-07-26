@@ -30,12 +30,12 @@
 
 <div class="container">
 
-    <form method="POST" action="${contextPath}/login" class="form-signin">
+    <rm method="POST" action="${contextPath}/login" >
         <h2 class="form-heading">Connexion</h2>
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
-            <input id="id_utilisateur" name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
+            <input id=name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
                    autofocus="true"/>
             <input id="mdp_utilisateur" name="password" type="password" class="form-control" placeholder="Mot de passe"/>
             <span>${error}</span>
