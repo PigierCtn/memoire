@@ -1,4 +1,4 @@
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
@@ -30,19 +30,19 @@
 
 <div class="container">
 
-    <rm method="POST" action="${contextPath}/login" >
+    <form method="POST" action="${contextPath}/login" class="form-signin">
         <h2 class="form-heading">Connexion</h2>
 
         <div class="form-group ${error != null ? 'has-error' : ''}">
             <span>${message}</span>
-            <input id=name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
+            <input name="username" type="text" class="form-control" placeholder="Nom d'utilisateur"
                    autofocus="true"/>
-            <input id="mdp_utilisateur" name="password" type="password" class="form-control" placeholder="Mot de passe"/>
+            <input name="password" type="password" class="form-control" placeholder="Mot de passe"/>
             <span>${error}</span>
             <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
 
-            <button id="connexion" class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
-            <h4 class="text-center"><a id="creation_compte" href="${contextPath}/registration">Pas encore de compte?</a></h4>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Connexion</button>
+            <h4 class="text-center"><a href="${contextPath}/registration">Créer un compte</a></h4>
         </div>
 
     </form>
